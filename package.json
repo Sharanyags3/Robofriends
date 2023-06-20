@@ -2,8 +2,7 @@
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://Sharanya21gs.github.io/robofriends",
-
+  "homepage": "https://Sharanya21gs.github.io/robofriends",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -15,7 +14,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-     "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -b master -d build"
+
   },
   "browserslist": {
     "production": [
@@ -28,5 +28,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
